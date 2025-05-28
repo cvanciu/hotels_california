@@ -9,11 +9,12 @@ On average, hotels have 1-2 amenities that likely use space, cooking, or
 water heating. About 34% of them have been renovated, less than 1% are
 on Energy Star or LEED Certified.
 
-![](hotels_files/figure-gfm/unnamed-chunk-10-1.png)<!-- --> More than
-half of hotels have under 50 rooms, are built before 1990, are operated
-independently, and have a building class of C. C Class buildings are
-often older, require significant renovation, and may be located in less
-desirable areas.
+![](hotels_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+
+More than half of hotels have under 50 rooms, are built before 1990, are
+operated independently, and have a building class of C. C Class
+buildings are often older, require significant renovation, and may be
+located in less desirable areas.
 
 Equipment and energy retrofits at chain management hotels (e.g., Hilton,
 Marriott, Hyatt) are typically systematic and strategically coordinated

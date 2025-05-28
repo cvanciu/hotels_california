@@ -119,6 +119,7 @@ BuildingClass <- ggplot(hotels, aes(x=Building.Class)) +
 grid.arrange(rooms, vintage, OpType, BuildingClass, ncol = 2)
 
 ```
+
 More than half of hotels have under 50 rooms, are built before 1990, are operated independently, and have a building class of C. C Class buildings are often older, require significant renovation, and may be located in less desirable areas. 
 
 Equipment and energy retrofits at chain management hotels (e.g., Hilton, Marriott, Hyatt) are typically systematic and strategically coordinated efforts. Most chain hotels operate under a centralized corporate strategy, especially when managed directly by the brand (not franchisees). The corporate sustainability or facilities management team sets the overarching goals and assesses its properties to identify the best candidates for retrofits.

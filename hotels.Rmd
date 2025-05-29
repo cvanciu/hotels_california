@@ -163,7 +163,19 @@ grid.arrange(Restaurant, GasUse, ncol = 2)
 
 ```
 
-For the roughly 25% of hotels with restaurants on site, it's important to note that it's usually only Luxury and Full-Service Chain Hotels who actually own them. It's likely that economy to mid scale, independently operated hotels lease out restaurant space they may have. 65% of hotels have amenities that likely use cooking, space, and water heating. 
+For the roughly 25% of hotels with restaurants on site, it's important to note that it's usually only Luxury and Full-Service Chain Hotels who actually own them. It's likely that economy to mid scale, independently operated hotels lease out restaurant space they may have. 
+
+Hotels in this dataset included information on the amenities they offer, such as Room Service, Pools, and Business Centers.
+
+We've created Gas Use categories detailed as the following:
+
+**Basic**: No listed amenities beyond the standard room heating, which is common to most hotels in California. Older/larger hotels located in colder inland or mountain areas are likely to have gas powered room heating.
+
+**Normal**: 1+ listed amenities.
+
+**High**: 1+ listed amenities that likely use space, water and cooking heating.
+      
+65% of hotels have amenities associated with likely higher gas use.
 
 ### Exclude Chain Management
 
@@ -283,10 +295,12 @@ ggplot(independent, aes(x = Number.Of.Amenities, y = Rooms, color = Gas.Use)) +
 
 ggplot(independent, aes(x = Number.Of.Amenities, y = Number.Of.HighGasUseAmenities, color = Building.Class)) +
          geom_jitter(alpha=0.7)+
+         scale_y_continuous(limits=c(0,8)) +
          labs(x = "# of Amenities",y="# of High Gas Use Amenities")
 
 ggplot(independent, aes(x = Number.Of.Amenities, y = Number.Of.HighGasUseAmenities, color = Hotel.Class)) +
          geom_jitter(alph=0.7) +
+         scale_y_continuous(limits=c(0,8)) +
          labs(x = "# of Amenities",y="# of High Gas Use Amenities")
 
 ```
@@ -441,8 +455,6 @@ highgasuse <- equitable %>%
 # data summary of select fields
 summaryfields <- c("Rooms","Year.Built","Year.Renovated","Number.Of.Amenities","Number.Of.HighGasUseAmenities", "Hotel.Class","Scale","Operation.Type","Hotel.Location.Type","Secondary.Type","Building.Class", "Energy.Star","Hotel.Grade","LEED.Certified","Market.Segment","Restaurant","Gas.Use")
 summary(highgasuse[summaryfields])
-```
-```{r, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 
 # Location Type
 ggplot(highgasuse, aes(x=Hotel.Location.Type)) + 
@@ -510,5 +522,5 @@ ggplot(data = highgasuse, aes(x=Number.Of.HighGasUseAmenities, y = "")) +
 
 They are typically built between 1960 and 1985, have 25-75 rooms, and have 1-2 high gas use amenities
 
-
+In addition to narrowing down our pool of prospective hotels to engage for equitable electrification opportunities by Building Class, Operation Type and amenities with Gas Usage, we may also like to add those that have not been renovated and were built before a certain year to the criteria, as an indicator of eagerness to pursue these projects. 
 

@@ -34,8 +34,24 @@ Small Town areas.
 For the roughly 25% of hotels with restaurants on site, it’s important
 to note that it’s usually only Luxury and Full-Service Chain Hotels who
 actually own them. It’s likely that economy to mid scale, independently
-operated hotels lease out restaurant space they may have. 65% of hotels
-have amenities that likely use cooking, space, and water heating.
+operated hotels lease out restaurant space they may have.
+
+Hotels in this dataset included information on the amenities they offer,
+such as Room Service, Pools, and Business Centers.
+
+We’ve created Gas Use categories detailed as the following:
+
+**Basic**: No listed amenities beyond the standard room heating, which
+is common to most hotels in California. Older/larger hotels located in
+colder inland or mountain areas are likely to have gas powered room
+heating.
+
+**Normal**: 1+ listed amenities.
+
+**High**: 1+ listed amenities that likely use space, water and cooking
+heating.
+
+65% of hotels have amenities associated with likely higher gas use.
 
 ### Exclude Chain Management
 
@@ -126,16 +142,22 @@ this “equitability” category. Lets look at hotels with high gas use.
 
 #### High Gas Use
 
-![](hotels_files/figure-gfm/unnamed-chunk-25-1.png)<!-- -->
+![](hotels_files/figure-gfm/unnamed-chunk-24-1.png)<!-- -->
 
 Close to 70% of High Gas Use hotels positioned for equitability are in
 Small and Suburban towns.
+
+![](hotels_files/figure-gfm/unnamed-chunk-25-1.png)<!-- -->![](hotels_files/figure-gfm/unnamed-chunk-25-2.png)<!-- -->
 
 ![](hotels_files/figure-gfm/unnamed-chunk-26-1.png)<!-- -->![](hotels_files/figure-gfm/unnamed-chunk-26-2.png)<!-- -->
 
 ![](hotels_files/figure-gfm/unnamed-chunk-27-1.png)<!-- -->![](hotels_files/figure-gfm/unnamed-chunk-27-2.png)<!-- -->
 
-![](hotels_files/figure-gfm/unnamed-chunk-28-1.png)<!-- -->![](hotels_files/figure-gfm/unnamed-chunk-28-2.png)<!-- -->
-
 They are typically built between 1960 and 1985, have 25-75 rooms, and
 have 1-2 high gas use amenities
+
+In addition to narrowing down our pool of prospective hotels to engage
+for equitable electrification opportunities by Building Class, Operation
+Type and amenities with Gas Usage, we may also like to add those that
+have not been renovated and were built before a certain year to the
+criteria, as an indicator of eagerness to pursue these projects.
